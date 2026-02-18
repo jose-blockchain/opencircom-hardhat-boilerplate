@@ -1,0 +1,20 @@
+{
+  "name": "opencircom-hardhat-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "setup:zk": "bash scripts/setup_zk.sh",
+    "compile:circuits": "bash scripts/compile_circuits.sh",
+    "compile": "npm run compile:circuits && hardhat compile",
+    "test": "npm run compile:circuits && npm run setup:zk && hardhat compile && hardhat test",
+    "clean": "rm -rf build cache artifacts contracts/verifiers/HelloHashVerifier.sol"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "circomlibjs": "^0.1.7",
+    "hardhat": "^2.18.0",
+    "snarkjs": "^0.7.5"
+  },
+  "dependencies": {
+    "opencircom": "^0.1.0"
+  }
+}
