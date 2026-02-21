@@ -1,6 +1,6 @@
 {
   "name": "opencircom-hardhat-boilerplate",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "scripts": {
     "setup:zk": "bash scripts/setup_zk.sh",
     "compile:circuits": "bash scripts/compile_circuits.sh",
@@ -15,6 +15,6 @@
     "snarkjs": "^0.7.5"
   },
   "dependencies": {
-    "opencircom": "^0.3.0"
+    "opencircom": "^0.4.0"
   }
 }
