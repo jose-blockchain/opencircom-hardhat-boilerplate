@@ -32,6 +32,8 @@ The first `npm test` runs trusted-setup generation and can take about a minute. 
 
 Proof generation runs inside the Hardhat test (no separate script). Tests skip the ZK path if zkey/WASM are missing — run `npm test` once to produce them.
 
+If setup or test generation fails, see [TROUBLESHOOTING.md](TROUBLESHOOTING.md) for common Circom, ZK artifact, and Hardhat compile fixes.
+
 ## Layout
 
 | Path | Role |
